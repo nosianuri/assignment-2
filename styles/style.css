@@ -4,7 +4,10 @@ body{
     position: relative;
     width: 1440px;
     height: 3306px;
-    }
+}
+#feature{
+    padding: 125px;
+}
 h1{
     font-size: 35px;
 }
@@ -20,16 +23,18 @@ h1{
     display:flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px, 14px, 10px, 14px;
-    justify-content: space-between;
+    padding: 10px;
     position: absolute;
-    width: 126px;
+    width: 106px;
     height: 34px;
     top: 291px;
-    left: 6px;
-
+    left: 3px;
+    color: #FFFFFF;
     border-radius: 41px;
     background: #E02C6D;
+}
+#more{
+    text-decoration: none;
 }
 .part-two{
     position: absolute;
@@ -65,10 +70,11 @@ h1{
 /* technology styles */
 .img{
     position: absolute;
-    width: 300px;
-    height: 256px;
-   
-   
+    width: 329px;
+    height: 476px;
+    left: 196px;
+    top: 1035px;
+    line-height: 1.3em;
     background: url(.jpg);
     border-radius: 5px;
 }
@@ -120,7 +126,7 @@ h1{
     top: 2064px;
     position: absolute;
     background: url(.jpg);
-    border-radius: 5px;
+    
 }
 .blogs{
     position: absolute;
@@ -138,41 +144,36 @@ h1{
     left: 665px;
     top: 2720px;
 }
-.color{
-    float: left;
+
+.next-btn, a{
+    text-decoration: none;
     color: #E02C6D;
+    font-weight: bold;
+    font-size: 20px;
 }
 .next-btn{
     display: flex;
     border: none;
+    
     text-align: center;
-    text-decoration: none;
+    
     position: absolute;
     color: #E02C6D;
     width: 99px;
     height: 24px;
     left: 1144px;
-    top: 2573px;
+    top: 2593px;
 }
-.wiki-btn{
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   padding: 10px 24px;
-   position: absolute;
-   width: 155px;
-   height: 44px;
-   left: 665px;
-   top: 2900px;
-   background: #E02C6D;
+.add .btn, a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
-.add-btn{
+.add .btn{
     position: static;
-    width: 75px;
-    height: 24px;
+   
     left: 24px;
     top: 10px;
-   
+    background: #E02C6D;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -189,9 +190,11 @@ footer{
 }
 #footer-info{
   position: absolute;
-  width: 1162px;
+  padding-left: 600px;
+  line-height: 1.3em;
+  width: 920px;
   height: 239px;
-  left: 589px;
+  left: 0px;
   top: 3117px;
   color: white;
 }
