@@ -1,9 +1,41 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:700px) {
+   .img{
+       background-color: #FB8200;
+       margin-bottom: 20px;
+   }
+   .container{
+       flex-direction: column;
+   }
+}
+@media (min-width:900px)  {
+    .img{
+        background-color: palegoldenrod;
+    }
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     position: relative;
     width: 1440px;
     height: 3306px;
+}
+.header{
+        display: flex;
+        justify-content: space-around;
+}
+.icon,img{
+      top: 285px;
+     
+      color: black;
+      display: flex;
+      text-align: right;
+      justify-content: space-between;
 }
 #feature{
     padding: 125px;
@@ -23,7 +55,7 @@ h1{
     display:flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     width: 106px;
     height: 34px;
@@ -62,9 +94,16 @@ h1{
     width: 1110px;
     height: 110px;
     left: 165px;
-    top: 725px;
-    box-shadow: 5px 5px white;
-    border: #AAAAAA;
+    top: 795px;
+ 
+    
+}
+.logos{
+    height: 50px;
+    border: 2px solid rgba(240, 237, 237, 0.918);
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
 }
 
 /* technology styles */
@@ -148,10 +187,11 @@ h1{
 .next-btn, a{
     text-decoration: none;
     color: #E02C6D;
+    background: none;
     font-weight: bold;
     font-size: 20px;
 }
-.next-btn{
+#next-btn{
     display: flex;
     border: none;
     
@@ -176,10 +216,11 @@ h1{
     background: #E02C6D;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 4px;
     line-height: 24px;
     color: #FFFFFF;
 }
+/* footer */
 footer{
  position: absolute;
  width: 1440px;
